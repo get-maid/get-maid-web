@@ -3584,13 +3584,13 @@
 		padding: 4em 0 2em 0;
 	}
 
-	#one {
+	#aboutus {
 		padding: 4em 0 4em 0;
 	}
 
 		@media screen and (max-width: 980px) {
 
-			#one {
+			#aboutus {
 				padding: 4em 0 2em 0;
 			}
 
@@ -3598,13 +3598,13 @@
 
 		@media screen and (max-width: 736px) {
 
-			#one {
+			#aboutus {
 				padding: 2em 0 0.1em 0;
 			}
 
 		}
 
-	#two {
+	#services {
 		padding: 6em 0 4em 0;
 		background: #f3f3f3;
 		background: -moz-linear-gradient(left, #f3f3f3 0%, #f3f3f3 50%, #f7f7f7 0%, #f7f7f7 100%);
@@ -3613,7 +3613,7 @@
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3f3f3', endColorstr='#f7f7f7',GradientType=1 );
 	}
 
-		#two .inner {
+		#services .inner {
 			display: -ms-flexbox;
 			display: -moz-flex;
 			display: -webkit-flex;
@@ -3625,21 +3625,21 @@
 			flex-direction: row;
 		}
 
-			#two .inner article {
+			#services .inner article {
 				width: 50%;
 			}
 
-				#two .inner article:first-child {
+				#services .inner article:first-child {
 					padding-right: 6em;
 				}
 
-				#two .inner article:last-child {
+				#services .inner article:last-child {
 					padding-left: 6em;
 				}
 
 		@media screen and (max-width: 980px) {
 
-			#two {
+			#services {
 				padding: 4em 0 2em 0;
 				background: -moz-linear-gradient(top, #f3f3f3 0%, #f3f3f3 50%, #f7f7f7 0%, #f7f7f7 100%);
 				background: -webkit-linear-gradient(top, #f3f3f3 0%, #f3f3f3 50%, #f7f7f7 0%, #f7f7f7 100%);
@@ -3647,23 +3647,23 @@
 				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3f3f3', endColorstr='#f7f7f7',GradientType=0 );
 			}
 
-				#two .inner {
+				#services .inner {
 					-moz-flex-direction: column;
 					-webkit-flex-direction: column;
 					-ms-flex-direction: column;
 					flex-direction: column;
 				}
 
-					#two .inner article {
+					#services .inner article {
 						width: 100%;
 					}
 
-						#two .inner article:first-child {
+						#services .inner article:first-child {
 							padding-right: 0;
 							padding-bottom: 2em;
 						}
 
-						#two .inner article:last-child {
+						#services .inner article:last-child {
 							padding-left: 0;
 							padding-top: 2em;
 						}
@@ -3672,7 +3672,7 @@
 
 		@media screen and (max-width: 736px) {
 
-			#two {
+			#services {
 				padding: 2em 0 0.1em 0;
 			}
 
@@ -3750,7 +3750,7 @@
 	#footer {
 		background-color: #e5474b;
 		color: #f2a3a5;
-		padding: 3em 0 1em 0;
+		padding: 4em 0 0em 0;
 		background: #e5474b;
 	}
 
@@ -4135,3 +4135,9 @@
   .card:hover {
 	  transform: scale(1.1);
   }
+
+#team-quarx {
+	text-align: center;
+	color: whitesmoke;
+	font-size: large;
+}
