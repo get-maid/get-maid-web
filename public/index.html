@@ -101,7 +101,7 @@
 									<h2 style="color: white;">Room cleaning</h2>
 								</div>
 								<div class="modal-body">
-									<form method="post" action="#">
+									<form method="post" action="thanks.html">
 										<div class="field half">
 											<label for="name" style="margin-bottom: 0;">Your Name</label>
 											<input type="text" name="name" id="name"  style="margin-bottom: 0;"/>
@@ -121,8 +121,6 @@
 										<div class="field">
 											<label for="message" style="width: fit-content;">Date</label>
 											<input type="date" name="name" id="name"  style="margin-bottom: 0;"/>
-
-											<!-- <input type="time" name="time" id="number"  style="margin-bottom: 0;"/> -->
 										</div>
 										<div class="field">
 											<label for="message" style="margin: 0 0 0 0;">Your preferred time slot</label>
@@ -137,13 +135,12 @@
 										</div>
 
 										<ul class="actions"  style="margin-bottom: 0;">
-											<li style="margin-bottom: 0;"><a href="thanks.html" class="button alt"  style="margin: 0;">Book</a></li>
+											<li style="margin-bottom: 0;">
+												<button>Book</button>
+											</li>
 										</ul>
 									</form>
 								</div>
-								<!-- <div class="modal-footer">
-									<h3>Modal Footer</h3>
-								</div> -->
 							</div>
 						</div>
 
@@ -165,11 +162,61 @@
 								</em>
 							</em>
 						</div>
-						<ul class="actions" style="margin-bottom: 3em;">
+						<ul class="actions">
 							<li>
-								<a href="delivery.html" class="button alt">Order now</a>
+								<button id="myBtn1" class="button alt">Order Now</button>
 							</li>
 						</ul>
+
+						<!-- The Modal -->
+						<div id="myModal1" class="modal1">
+
+							<!-- Modal content -->
+							<div class="modal1-content">
+								<div class="modal1-header">
+									<span class="close">&times;</span>
+									<h2 style="color: white;">Rent a bicycle</h2>
+								</div>
+								<div class="modal1-body">
+									<form method="post" action="thanks.html">
+										<div class="field half">
+											<label for="name" style="margin-bottom: 0;">Your Name</label>
+											<input type="text" name="name" id="name"  style="margin-bottom: 0;"/>
+										</div>
+										<div class="field half">
+											<label for="email" style="margin-bottom: 0;">Mobile number</label>
+											<input type="text" name="number" id="phone"  style="margin-bottom: 0;"/>
+										</div>
+										<div class="field half">
+											<label for="message" style="margin: 0 0 0 0;">Hostel number</label>
+											<input type="text" name="number" id="number"  style="margin-bottom: 0;"/>
+										</div>
+										<div class="field half">
+											<label for="message" style="margin: 0 0 0 0;">Room number</label>
+											<input type="text" name="number" id="number"  style="margin-bottom: 0;"/>
+										</div>
+										<div class="field half">
+											<label for="message">Date</label>
+											<input type="date" name="name" id="name"  style="margin-bottom: 0;"/>
+										</div>
+										<div class="field half">
+											<label for="message">Time</label>
+											<input type="time" name="time" id="number"  style="margin-bottom: 0;"/>
+										</div>
+										<div style="margin-left: 1em;">
+											<label for="message" style="margin: 0 0 0 0;">Location</label>
+											<input type="text" name="loction" id="location"/>
+										</div>
+
+										<ul class="actions"  style="margin-bottom: 0;">
+											<li style="margin-bottom: 0;">
+												<button class="button alt">Book</button>
+											</li>
+										</ul>
+									</form>
+								</div>
+							</div>
+						</div>
 					</article>
 					<article style="text-align: center;" class="alt">
 						<div class="content">
@@ -238,6 +285,33 @@
 
 				// Get the button that opens the modal
 				var btn = document.getElementById("myBtn");
+
+				// Get the <span> element that closes the modal
+				var span = document.getElementsByClassName("close")[0];
+
+				// When the user clicks the button, open the modal 
+				btn.onclick = function() {
+					modal.style.display = "block";
+				}
+
+				// When the user clicks on <span> (x), close the modal
+				span.onclick = function() {
+					modal.style.display = "none";
+				}
+
+				// When the user clicks anywhere outside of the modal, close it
+				window.onclick = function(event) {
+					if (event.target == modal) {
+						modal.style.display = "none";
+					}
+				}
+			</script>
+			<script>
+				// Get the modal
+				var modal = document.getElementById("myModal1");
+
+				// Get the button that opens the modal
+				var btn = document.getElementById("myBtn1");
 
 				// Get the <span> element that closes the modal
 				var span = document.getElementsByClassName("close")[0];
