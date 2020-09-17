@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Get-Maid</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="icon" href="../images/GetMaid.png" type="image/png">
+        <link rel="stylesheet" href="../assets/css/styles.css" />
+        <script src="../assets/js/store.js" async></script>
+    </head>
+    <body>
+		<!-- Header -->
+        <header id="header">
+            <div class="inner">
+                <a href="../index.html" class="logo"><img src="../images/GetMaid.png" alt="logo" style="width: 1.8em; vertical-align: middle; padding-bottom: 0.4em;">&nbsp;&nbsp;&nbsp;Get - Maid</a>
+                <nav id="nav">
+                    <a href="../index.html">Home</a>
+                    <a href="#footer">Contact us</a>
+                </nav>
+            </div>
+        </header>
+        <a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+        
+        <section class="cont content-section">
+            <p class="section-header" style="font-size: 3em; margin-bottom: 1em;">Food items</p>
+            <div class="row shop-items">
+                <div class="column shop-item">
+                    <div class="card" style="background-color: white;">
+                        <h4 class="shop-item-title">Item - 1</h4>
+                        <img src="../images/groc-c1-s1.jpeg" class="shop-item-image">
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">₹10</span>
+                            <br>
+                            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+                <div class="column shop-item">
+                    <div class="card" style="background-color: white;">
+                        <h4 class="shop-item-title">Item - 2</h4>
+                        <img src="../images/groc-c1-s1.jpeg" class="shop-item-image">
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">₹20</span>
+                            <br>
+                            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+                <div class="column shop-item">
+                    <div class="card" style="background-color: white;">
+                        <h4 class="shop-item-title">Item - 3</h4>
+                        <img src="../images/groc-c1-s1.jpeg" class="shop-item-image">
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">₹30</span>
+                            <br>
+                            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+                <div class="column shop-item">
+                    <div class="card" style="background-color: white;">
+                        <h4 class="shop-item-title">Item - 4</h4>
+                        <img src="../images/groc-c1-s1.jpeg" class="shop-item-image">
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">₹40</span>
+                            <br>
+                            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </section>
+        
+        <section class="cont content-section">
+            <br>
+            <br>
+            <p class="section-header" style="font-size: 3em; margin-bottom: 0;">Cart</p>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">₹0</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+        </section>
+        <!-- Footer -->
+			<section id="footer">
+				<div class="inner">
+					<header>
+						<h2>Get in Touch</h2>
+						<h3>
+							<a href="https://www.facebook.com/pages/category/Product-Service/Get-Maid-Official-103079637946706/" class="fa fa-facebook" aria-hidden="true" style="padding: 0 1em 0 0;"></a>
+							<a href="https://www.twitter.com/" class="fa fa-twitter" aria-hidden="true" style="padding: 0 1em 0 0;"></a>
+							<a href="https://www.linkedin.com/" class="fa fa-linkedin" style="padding: 0 1em 0 0;"></a>
+							<a href="https://www.google.com/" class="fa fa-google" style="padding: 0;"></a>
+						</h3>
+					</header>
+					<form method="post" action="#">
+						<div class="field half first">
+							<label for="name">Name</label>
+							<input type="text" name="name" id="name" />
+						</div>
+						<div class="field half">
+							<label for="email">Email</label>
+							<input type="text" name="email" id="email" />
+						</div>
+						<div class="field">
+							<label for="message">Message</label>
+							<textarea name="message" id="message" rows="6"></textarea>
+						</div>
+						<ul class="actions">
+							<li><input type="submit" value="Send Message" class="alt" /></li>
+						</ul>
+					</form>
+				</div>
+			</section>
+
+
+		<!-- Scripts -->
+			<script>
+				// Get the modal
+				var modal = document.getElementById("myModal");
+
+				// Get the button that opens the modal
+				var btn = document.getElementById("mybtn");
+
+				// Get the <span> element that closes the modal
+				var span = document.getElementsByClassName("close")[0];
+
+				// When the user clicks the button, open the modal 
+				btn.onclick = function() {
+					modal.style.display = "block";
+				}
+
+				// When the user clicks on <span> (x), close the modal
+				span.onclick = function() {
+					modal.style.display = "none";
+				}
+
+				// When the user clicks anywhere outside of the modal, close it
+				window.onclick = function(event) {
+					if (event.target == modal) {
+						modal.style.display = "none";
+					}
+				}
+			</script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+    </body>
+</html>
