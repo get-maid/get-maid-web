@@ -82,6 +82,10 @@
 		width: 25em;
 	}
 
+	#store-img {
+		width: 13em;
+	}
+
 	@media screen and (max-width: 1680px) {
 
 		.container.\31 25\25 {
@@ -114,6 +118,10 @@
 			width: 20em;
 		}
 
+		#store-img {
+			width: 10em;
+		}
+
 		.container.\31 25\25 {
 			width: 100%;
 			max-width: 81.25em;
@@ -139,6 +147,10 @@
 	}
 
 	@media screen and (max-width: 980px) {
+
+		#store-img {
+			width: 8em;
+		}
 
 		.container.\31 25\25 {
 			width: 100%;
