@@ -1,0 +1,225 @@
+
+.*{
+    margin: 0;
+   padding: 0;
+}
+html,body{
+        margin: 0;
+   padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar{
+  position: fixed;
+width:100%;
+  height: auto;
+z-index:1000;
+
+background-color: #07031a;
+        font-family: 'Montserrat', sans-serif;
+}
+.fa{
+  color:white;
+}
+.fa:hover{
+  color: purple;
+}
+nav .navbar-nav li a{
+  color: white !important;
+  }
+  nav .navbar-nav li a:hover{
+    color: purple!important;
+    }
+    .navbar-collapse{
+      text-align: center;
+    }
+.logo{
+  height: 100%;
+    width: 50px;
+    margin-left: 5px;
+    margin-top: 5.5px;
+    margin-bottom: 5.5px;
+}
+.logo1{
+
+    height: 100%;
+    width: 55px;
+    margin-left: 10px;
+    margin-top: 6px;
+    margin-bottom:6px;
+}
+.logo2{
+
+    height: auto;
+    width: 100px;
+    margin-left: 10px;
+    margin-top: 8px;
+    margin-bottom:6px;
+}
+@media only screen and (max-width: 990px){
+  .logo{
+    height: 100%;
+      width: 35px;
+      margin-left:3px;
+      margin-top: 3.5px;
+      margin-bottom: 3.5px;
+  }
+  .logo1{
+
+      height: 100%;
+      width: 35px;
+      margin-left: 7px;
+      margin-top: 3px;
+      margin-bottom:3px;
+  }
+  .logo2{
+
+      height: auto;
+      width: 70px;
+      margin-left: 7px;
+      margin-top: 4px;
+      margin-bottom:3px;
+  }
+}
+
+nav-item{
+  float:right;
+}
+
+h1 {
+  text-align: center;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
+#team{
+  margin-top:200px;
+  margin-bottom: 100px;
+  
+}
+h6{
+  font-size: 0.9rem;
+}
+.card {
+  height: 250px;
+  width: 200px;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 2%;
+  overflow: hidden;
+  background: #32e0c4;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 #e4f9ff;
+}
+
+.profile {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.card:hover .profile {
+  transition: 0.3s;
+}
+
+.details {
+  text-align: center;
+  color: white;
+    padding: 5px;
+}
+
+
+/**** Social Icons *****/
+.social-icons {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  display: flex;
+}
+
+li {
+  list-style: none;
+}
+
+.social-icons a {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background: #32e0c4;
+  font-size: 23px;
+  color: #333;
+  font-weight: bold;
+  margin: 0 6px;
+  transition: .4s;
+  transform: translateY(200px);
+  opacity: 0;
+    border-radius: 50%;
+}
+
+.card:hover .social-icons li a {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.social-icons li a:hover {
+  background: #000;
+  transition: .2s;
+}
+
+.social-icons li a:hover .fa {
+  color: #fff;
+}
+
+.social-icons li a .fa {
+  transition: .8s;
+}
+
+.social-icons li a .fa:hover {
+  color: #fff;
+}
+
+.card:hover li:nth-child(1) a {
+  transition-delay: 0.1s;
+}
+
+.card:hover li:nth-child(2) a {
+  transition-delay: 0.2s;
+}
+
+.card:hover li:nth-child(3) a {
+  transition-delay: 0.3s;
+}
+
+@media only screen and (max-width: 767px) {
+  .card {
+    height: 220px;
+    width: 190px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .card:hover .profile {
+    opacity: 0.3;
+    transition: 0.3s;
+  }
+  .social-icons {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    display: flex;
+  }
+
+}
