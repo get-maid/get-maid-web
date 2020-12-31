@@ -4234,3 +4234,10 @@
 	color: whitesmoke;
 	font-size: large;
 }
+
+.inner header h2 {
+	text-transform: none;
+	text-align: center;
+	font-family: 'Pacifico', cursive;
+	padding-top: 1vw;
+}
