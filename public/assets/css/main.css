@@ -4229,16 +4229,8 @@
 	  transform: scale(1.1);
   }
 
-#team-Disqualified {
+#team-Quarx {
 	text-align: center;
 	color: whitesmoke;
 	font-size: large;
-}
-
-#iste-sponsors {
-	text-align: center;
-	color: white;
-	background-color: #000;
-	/* padding: 4em; */
-	/* margin: 6em; */
 }
