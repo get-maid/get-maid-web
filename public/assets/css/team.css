@@ -4315,4 +4315,12 @@ li {
   .column img {
     width: 30vw;
   }
+
+  .social-icons {
+    left: 44.1%;
+  }
+}
+
+#team-Quarx {
+  text-align: center;
 }
